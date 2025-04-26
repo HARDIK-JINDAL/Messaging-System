@@ -85,6 +85,6 @@ $conn->close();
     <?php endif; ?>
 
     <!-- Back Button to Previous Main Page -->
-    <button onclick="window.location.href='/DBMS_PROJECT/main/main.html';">Back</button>
+    <button onclick="window.location.href='../main/main.html';">Back</button>
 </body>
 </html>

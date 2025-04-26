@@ -7,7 +7,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (isset($_POST['home'])) {
-        header("Location: /DBMS_PROJECT/home/home.html"); 
+        header("Location: ../home/home.html"); 
         exit;
     }
 

@@ -58,7 +58,7 @@ mysqli_close($conn);
         </form>
         
         <!-- Use a simple button outside the form to go back -->
-        <button onclick="window.location.href='/DBMS_PROJECT/main/main.html';">Back</button>
+        <button onclick="window.location.href='../main/main.html';">Back</button>
     </div>
 </body>
 </html>

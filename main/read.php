@@ -49,6 +49,6 @@ $result = mysqli_query($conn, $sql);
     ?>
 
     <!-- Back Button to go to the main page -->
-    <button onclick="window.location.href='/DBMS_PROJECT/main/main.html';">Back</button>
+    <button onclick="window.location.href='../main/main.html';">Back</button>
 </body>
 </html>
