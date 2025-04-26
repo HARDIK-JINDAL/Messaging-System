@@ -1,0 +1,82 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1EFEC; /* Light cream background */
+    color: #030303; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Page heading */
+h1 {
+    font-size: 32px;
+    color: #123458; /* Deep blue */
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.container {
+    background-color: #D4C9BE; /* Soft beige */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    text-align: center;
+    width: 320px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Form title */
+form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #030303;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background-color: #123458;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+input[type="submit"]:hover {
+    background-color: #030303;
+}
+
+/* Optional: Message styling if needed */
+.message {
+    margin-top: 15px;
+    color: #8E1616;
+    font-weight: bold;
+    background-color: #F1EFEC;
+    padding: 10px;
+    border-left: 4px solid #D84040;
+    border-radius: 4px;
+}

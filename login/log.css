@@ -1,0 +1,85 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2D9D2; /* Softer, less bright light cream background */
+    color: #030303; /* Dark gray/black text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for the form */
+.container {
+    background-color: #B5A896; /* Softer beige-gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Form and input field styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    background-color: #123458; /* Deep blue for buttons */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-color: #030303; /* Dark gray/black for hover effect */
+}
+
+/* Title styling */
+h1 {
+    font-size: 32px;
+    color: #030303; /* Dark gray/black text for headers */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Subtitle styling */
+h2 {
+    font-size: 18px;
+    color: #030303; /* Dark gray/black text for headers */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message {
+    margin-top: 15px;
+    color: #8E1616; /* Subtle red for errors */
+    font-weight: 600;
+    background-color: #F1EFEC;
+    padding: 10px 15px;
+    border-left: 4px solid #D84040;
+    border-radius: 5px;
+  }
+  

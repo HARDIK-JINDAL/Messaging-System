@@ -1,0 +1,70 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1EFEC;
+    color: #030303;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    color: #123458;
+    margin-bottom: 10px;
+}
+
+/* Subtext */
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form container */
+.container {
+    background-color: #D4C9BE;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Button styles */
+input[type="submit"] {
+    background-color: #123458;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 160px;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-color: #030303;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 500px) {
+    input[type="submit"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,80 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2D9D2; /* Softer, less bright light cream background */
+    color: #030303; /* Dark gray/black text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Adjusted for better centering with emojis */
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling due to floating envelopes */
+}
+
+/* Container to center the form */
+.container {
+    background-color: #B5A896; /* Softer beige-gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    text-align: center;
+    width: 300px;
+    z-index: 2; /* Keeps the form above the envelopes */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #123458; /* Deep blue for buttons */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #030303; /* Dark gray/black for hover effect */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add some space at the top of the form */
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+/* Title text */
+h1 {
+    font-size: 28px;
+    color: #030303; /* Dark gray/black text for headers */
+    margin-bottom: 20px;
+}
+
+/* Emoji styles */
+.emoji {
+    font-size: 2em; /* A reasonable size for emojis */
+    margin: 15px 0;
+}
+
+/* Emoji container */
+.heading-emojis {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+/* Adding space between the title and emojis */
+h1 + .heading-emojis {
+    margin-top: 10px;
+}
