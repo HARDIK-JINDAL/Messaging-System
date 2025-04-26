@@ -6,7 +6,7 @@ This is a web-based **Messaging System** built using **PHP**, **MySQL**, and **H
 
 ## 📁 Folder Structure
 ```
-C:\xampp\htdocs\Messaging-
+C:\xampp\htdocs\MESSAGING-SYSTEM
 │
 ├── database\ # SQL files for database setup
 │
