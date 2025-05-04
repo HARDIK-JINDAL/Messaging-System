@@ -26,6 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_message'])) {
     $delete = $conn->prepare("DELETE FROM Messages WHERE message_id = ? AND sender_email = ?");
     $delete->bind_param("is", $message_id, $user_email);
     if ($delete->execute()) {
+        $log_message = "$user_email deleted message (ID: $message_id)"; // Custom log message
+        $action = "Deleted message";
+        $log_stmt = $conn->prepare("INSERT INTO Log (sender_email, receiver_email, message_id, log_message, action, log_time) VALUES (?, ?, ?, ?, ?, NOW())");
+        $log_stmt->bind_param("ssiss", $user_email, $receiver_email, $message_id, $log_message, $action);
+        $log_stmt->execute();
+        
         $success = "✅ Message deleted successfully!";
     } else {
         $error = "❌ Failed to delete message.";
