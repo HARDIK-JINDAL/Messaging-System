@@ -20,7 +20,10 @@
         } elseif (isset($_POST['Sent'])) {
             header("Location: sent.php");
             exit;
-        } 
+        }  elseif (isset($_POST['Delete'])) {
+            header("Location: delete.php");
+            exit;
+        }
     }
 
     // Close the database connection
